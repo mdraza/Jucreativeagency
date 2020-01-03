@@ -33,8 +33,9 @@ p {
     font-size: 14px;
     line-height: 24px;
 }
-.btn{
-    background:#2a57e6;
+
+.btn {
+    background: #2a57e6;
     color: #ffffff;
 }
 
@@ -44,7 +45,7 @@ $primary-color: #2a57e6;
 /*        Navbar
 /*-------------------------------*/
 .navbar {
-    padding: 10px 0 10px;
+    padding: 8px 0;
     background: 0 0;
     position: absolute;
     top: 0;
@@ -105,25 +106,40 @@ $primary-color: #2a57e6;
     }
 
     .navbar-nav {
-        text-align: center;
+        @media screen and (max-width: 576px) {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+            font-size: 18px;
+        }
 
         .nav-item {
+            @media screen and (max-width: 576px) {
+                padding: 15px 0;
+            }
+
             .gtStart {
                 padding: 6px 28px;
                 background: #fff;
                 color: $primary-color;
                 transition: 0.5s;
-                &:hover{
+
+                &:hover {
                     background: $primary-color;
-                    color: #fff; 
+                    color: #fff;
+                }
+
+                @media screen and (max-width: 576px) {
+                    margin-right: 20px;
+                    font-size: 18px;
                 }
             }
 
             .nav-link {
                 color: #404040;
                 font-weight: 500;
-                
-                &:hover{
+
+                &:hover {
                     color: #0b3feb;
                     font-weight: bold;
                 }
@@ -148,6 +164,41 @@ $primary-color: #2a57e6;
 }
 
 /*-------------------------------*/
+/*      Sticky Navbar
+/*-------------------------------*/
+.nav-scroll {
+    background: #fff;
+    padding: 6px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    color: #000000;
+    box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
+
+    .navbar-nav {
+        .nav-item {
+            .gtStart {
+                background: $primary-color;
+                color: #fff;
+            }
+
+            .nav-link {
+                color: #111 !important;
+                ;
+            }
+        }
+    }
+
+    .navbar-toggler .icon-bar {
+        background: #111
+    }
+}
+
+
+/*-------------------------------*/
 /*        Header
 /*-------------------------------*/
 .header {
@@ -156,54 +207,114 @@ $primary-color: #2a57e6;
     width: 100%;
     overflow: hidden;
     background-image: url(../images/header-bg.jpg);
-    // background-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 576px) {
+        background-image: none;
+    }
+
     .wraper {
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        
+
 
         .item {
-            .header-txt{
+            .header-txt {
                 margin-top: 200px;
-                h1{
+
+                h1 {
                     font-size: 55px;
                     margin-bottom: 20px;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 35px;
+                        text-align: center;
+                    }
                 }
-                p{
+
+                p {
                     margin-bottom: 20px;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 18px;
+                        text-align: center;
+                    }
                 }
-                span{
+
+                span {
                     color: $primary-color;
                 }
-                button{
+
+                button {
                     padding: 12px 20px;
+
+                    @media screen and (max-width: 576px) {
+                        margin: auto;
+                        display: block;
+                        font-size: 18px;
+                    }
+                }
+
+                @media screen and (max-width: 576px) {
+                    margin-top: 20px;
                 }
             }
-            .header-img{
+
+            .header-img {
                 margin-top: 120px;
-                img{
+                @media screen and (max-width: 576px) {
+                    margin-top: 70px;
+                }
+
+                img {
                     width: 100%;
                 }
             }
         }
     }
 }
+
 /*-------------------------------*/
 /*        Brand
 /*-------------------------------*/
-.brands{
-    padding: 0 0 65px;
-    .owl-carousel{
-        .item{
-            img{
+.brands {
+    padding: 70px 0;
+
+    .owl-carousel {
+        .item {
+            img {
                 display: block;
                 width: auto !important;
                 margin: auto;
             }
+        }
+    }
+}
+/*-------------------------------*/
+/*        About Section
+/*-------------------------------*/
+.about{
+    padding: 70px 0px;
+    background-image: url(../images/about-bg.jpg);
+    background-size: cover;
+    .about-txt{
+        width: 44%;
+        margin: auto;
+        text-align: center;
+        h2{
+            font-weight: 600;
+        }
+        span{
+            color: $primary-color;
+        }
+    }
+    .about-img{
+        img{
+            width: 100%;
         }
     }
 }

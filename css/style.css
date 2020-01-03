@@ -44,7 +44,7 @@ p {
 /*        Navbar
 /*-------------------------------*/
 .navbar {
-  padding: 10px 0 10px;
+  padding: 8px 0;
   background: 0 0;
   position: absolute;
   top: 0;
@@ -103,8 +103,19 @@ p {
   color: #000912;
 }
 
-.navbar .navbar-nav {
-  text-align: center;
+@media screen and (max-width: 576px) {
+  .navbar .navbar-nav {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar .navbar-nav .nav-item {
+    padding: 15px 0;
+  }
 }
 
 .navbar .navbar-nav .nav-item .gtStart {
@@ -118,6 +129,13 @@ p {
 .navbar .navbar-nav .nav-item .gtStart:hover {
   background: #2a57e6;
   color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar .navbar-nav .nav-item .gtStart {
+    margin-right: 20px;
+    font-size: 18px;
+  }
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -144,6 +162,36 @@ p {
 }
 
 /*-------------------------------*/
+/*      Sticky Navbar
+/*-------------------------------*/
+.nav-scroll {
+  background: #fff;
+  padding: 6px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  color: #000000;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
+          box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
+}
+
+.nav-scroll .navbar-nav .nav-item .gtStart {
+  background: #2a57e6;
+  color: #fff;
+}
+
+.nav-scroll .navbar-nav .nav-item .nav-link {
+  color: #111 !important;
+}
+
+.nav-scroll .navbar-toggler .icon-bar {
+  background: #111;
+}
+
+/*-------------------------------*/
 /*        Header
 /*-------------------------------*/
 .header {
@@ -152,7 +200,14 @@ p {
   width: 100%;
   overflow: hidden;
   background-image: url(../images/header-bg.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    background-image: none;
+  }
 }
 
 .header .wraper {
@@ -172,8 +227,22 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .header .wraper .item .header-txt h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
 .header .wraper .item .header-txt p {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .header .wraper .item .header-txt p {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 .header .wraper .item .header-txt span {
@@ -184,8 +253,28 @@ p {
   padding: 12px 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .header .wraper .item .header-txt button {
+    margin: auto;
+    display: block;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header .wraper .item .header-txt {
+    margin-top: 20px;
+  }
+}
+
 .header .wraper .item .header-img {
   margin-top: 120px;
+}
+
+@media screen and (max-width: 576px) {
+  .header .wraper .item .header-img {
+    margin-top: 70px;
+  }
 }
 
 .header .wraper .item .header-img img {
@@ -196,12 +285,39 @@ p {
 /*        Brand
 /*-------------------------------*/
 .brands {
-  padding: 0 0 65px;
+  padding: 70px 0;
 }
 
 .brands .owl-carousel .item img {
   display: block;
   width: auto !important;
   margin: auto;
+}
+
+/*-------------------------------*/
+/*        About Section
+/*-------------------------------*/
+.about {
+  padding: 70px 0px;
+  background-image: url(../images/about-bg.jpg);
+  background-size: cover;
+}
+
+.about .about-txt {
+  width: 44%;
+  margin: auto;
+  text-align: center;
+}
+
+.about .about-txt h2 {
+  font-weight: 600;
+}
+
+.about .about-txt span {
+  color: #2a57e6;
+}
+
+.about .about-img img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
