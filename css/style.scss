@@ -33,8 +33,12 @@ p {
     font-size: 14px;
     line-height: 24px;
 }
+.btn{
+    background:#2a57e6;
+    color: #ffffff;
+}
 
-$primary-color: #007bff;
+$primary-color: #2a57e6;
 
 /*-------------------------------*/
 /*        Navbar
@@ -106,11 +110,23 @@ $primary-color: #007bff;
         .nav-item {
             .gtStart {
                 padding: 6px 28px;
+                background: #fff;
+                color: $primary-color;
+                transition: 0.5s;
+                &:hover{
+                    background: $primary-color;
+                    color: #fff; 
+                }
             }
 
             .nav-link {
                 color: #404040;
                 font-weight: 500;
+                
+                &:hover{
+                    color: #0b3feb;
+                    font-weight: bold;
+                }
             }
         }
 
@@ -139,38 +155,54 @@ $primary-color: #007bff;
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    padding: 120px 0;
     background-image: url(../images/header-bg.jpg);
-
+    // background-size: contain;
+    background-repeat: no-repeat;
     .wraper {
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        
 
         .item {
-            height: 100vh !important;
-            width: 100%;
-
-            &:after {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                // background: rgba(0, 0, 0, .75);
-                z-index: 4
-            }
             .header-txt{
                 margin-top: 200px;
+                h1{
+                    font-size: 55px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+                span{
+                    color: $primary-color;
+                }
+                button{
+                    padding: 12px 20px;
+                }
             }
             .header-img{
                 margin-top: 120px;
                 img{
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+/*-------------------------------*/
+/*        Brand
+/*-------------------------------*/
+.brands{
+    padding: 0 0 65px;
+    .owl-carousel{
+        .item{
+            img{
+                display: block;
+                width: auto !important;
+                margin: auto;
             }
         }
     }

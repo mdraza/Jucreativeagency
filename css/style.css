@@ -35,6 +35,11 @@ p {
   line-height: 24px;
 }
 
+.btn {
+  background: #2a57e6;
+  color: #ffffff;
+}
+
 /*-------------------------------*/
 /*        Navbar
 /*-------------------------------*/
@@ -65,19 +70,19 @@ p {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: #007bff;
+  background-color: #2a57e6;
   color: #ffffff;
   line-height: 1.5;
   padding: 2px;
   text-align: center;
   font-size: 15px;
   border-radius: 50%;
-  border: 2px solid #007bff;
+  border: 2px solid #2a57e6;
   font-weight: 600;
 }
 
 .navbar .navbar-brand .logoTxt .txt2 {
-  color: #007bff;
+  color: #2a57e6;
   font-size: 20px;
   display: inline-block;
   margin-left: 3px;
@@ -104,11 +109,25 @@ p {
 
 .navbar .navbar-nav .nav-item .gtStart {
   padding: 6px 28px;
+  background: #fff;
+  color: #2a57e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar .navbar-nav .nav-item .gtStart:hover {
+  background: #2a57e6;
+  color: #fff;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
   color: #404040;
   font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #0b3feb;
+  font-weight: bold;
 }
 
 .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
@@ -132,8 +151,8 @@ p {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  padding: 120px 0;
   background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
 }
 
 .header .wraper {
@@ -144,23 +163,25 @@ p {
   width: 100%;
 }
 
-.header .wraper .item {
-  height: 100vh !important;
-  width: 100%;
-}
-
-.header .wraper .item:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 4;
-}
-
 .header .wraper .item .header-txt {
   margin-top: 200px;
+}
+
+.header .wraper .item .header-txt h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.header .wraper .item .header-txt p {
+  margin-bottom: 20px;
+}
+
+.header .wraper .item .header-txt span {
+  color: #2a57e6;
+}
+
+.header .wraper .item .header-txt button {
+  padding: 12px 20px;
 }
 
 .header .wraper .item .header-img {
@@ -169,5 +190,18 @@ p {
 
 .header .wraper .item .header-img img {
   width: 100%;
+}
+
+/*-------------------------------*/
+/*        Brand
+/*-------------------------------*/
+.brands {
+  padding: 0 0 65px;
+}
+
+.brands .owl-carousel .item img {
+  display: block;
+  width: auto !important;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
