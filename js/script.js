@@ -8,8 +8,8 @@ $(document).ready(function () {
 
 
 
-/****  Owl Carousel  ****/
-$('.owl-carousel').owlCarousel({
+/****  Brands Carousel  ****/
+$('.owl-carouselOne').owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -19,13 +19,31 @@ $('.owl-carousel').owlCarousel({
     autoplayHoverPause: false,
     responsive: {
         0: {
-            items: 1
+            items: 2
         },
         600: {
             items: 3
         },
         1000: {
             items: 5
+        }
+    }
+});
+/****  Services Carousel  ****/
+$('.owl-carouselTwo').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
     }
 })
