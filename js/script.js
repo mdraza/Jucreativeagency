@@ -47,3 +47,22 @@ $('.owl-carouselTwo').owlCarousel({
         }
     }
 })
+/****  Testimonial Carousel  ****/
+$('.owl-carouselThree').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    navText: ["<i class='icofont-long-arrow-left'></i>","<i class='icofont-long-arrow-right'></i>"],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})

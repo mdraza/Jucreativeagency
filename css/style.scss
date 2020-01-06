@@ -212,6 +212,7 @@ $primary-color: #2a57e6;
 
     @media screen and (max-width: 576px) {
         background-image: none;
+        height: 665px;
     }
 
     .wraper {
@@ -383,6 +384,7 @@ $primary-color: #2a57e6;
     padding: 70px 0;
     background-image: url(../images/service-bg.jpg);
     background-size: contain;
+
     @media screen and (max-width: 576px) {
         background-image: none;
     }
@@ -391,12 +393,14 @@ $primary-color: #2a57e6;
         width: 40%;
         text-align: center;
         margin: auto;
+
         @media screen and (max-width: 576px) {
             width: 85%;
         }
 
         h2 {
             line-height: 1.4;
+
             @media screen and (max-width: 576px) {
                 font-size: 25px;
             }
@@ -416,9 +420,11 @@ $primary-color: #2a57e6;
 
     .service-box {
         padding: 30px 0;
+
         @media screen and (max-width: 576px) {
             padding: 10px;
         }
+
         .service-content {
             transition: 0.5s;
             padding: 25px;
@@ -453,6 +459,7 @@ $primary-color: #2a57e6;
             .servivce-txt {
                 padding: 0 0 15px;
                 transition: 0.5s;
+
                 h4 {
                     font-size: 22px;
                 }
@@ -479,24 +486,388 @@ $primary-color: #2a57e6;
 
             &:hover a {
                 color: #fff;
+
                 &::after {
                     width: 100%;
                     background: #ffffff;
                 }
             }
-            &:hover{
+
+            &:hover {
                 background: $primary-color;
-                .servivce-txt{
-                    h4,p{
+
+                .servivce-txt {
+
+                    h4,
+                    p {
                         color: #fff;
                     }
                 }
             }
         }
     }
-    .owl-theme .owl-dots .owl-dot{
-        &:focus{
+
+    .owl-theme .owl-dots .owl-dot {
+        &:focus {
             outline: none;
+        }
+    }
+}
+
+/*-------------------------------*/
+/*       Testimonial Section
+/*-------------------------------*/
+.testimonial {
+    background-image: url(../images/testimonial-bg.jpg);
+
+    .testimonial-headTxtImg {
+        margin-top: 30px;
+
+        small {
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        h2 {
+            padding: 8px 0;
+            line-height: 1.3;
+
+            @media screen and (max-width: 576px) {
+                font-size: 25px;
+            }
+        }
+
+        .t-image {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    margin-right: 5px;
+
+                    @media screen and (max-width: 576px) {
+                        margin-right: 0px;
+                        width: 64px;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .testimonial-txt {
+        background-image: url(../images/t-slider-bg.png);
+        background-size: 100% 100%;
+
+        .textmoTxt {
+            padding: 110px;
+            margin-top: 30px;
+
+            @media screen and (max-width: 576px) {
+                padding: 25px;
+                margin-top: 75px;
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .testDetail {
+                h5 {
+                    @media screen and (max-width: 576px) {
+                        font-size: 18px;
+                        margin-left: 5px;
+                    }
+                }
+
+                p {
+                    @media screen and (max-width: 576px) {
+                        font-size: 10px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+        .owl-theme .owl-nav {
+            position: absolute;
+            top: 65%;
+            left: 60%;
+
+            &:hover {
+                background: transparent !important;
+                color: #333333 !important;
+            }
+
+            button {
+                i {
+                    font-size: 30px;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 20px;
+                    }
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: transparent;
+                    color: #333333;
+                    outline: none;
+                }
+
+
+            }
+
+            @media screen and (max-width: 576px) {
+                position: absolute;
+                top: 75%;
+                left: 40%;
+            }
+        }
+    }
+}
+
+/*-------------------------------*/
+/*       Portfolio Section
+/*-------------------------------*/
+.portfolio {
+    padding: 70px 0;
+    background-image: url(../images/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 576px) {
+        background-image: none;
+        padding: 70px 0 30px;
+    }
+
+    .portfolio-headerTxt {
+        width: 40%;
+        text-align: center;
+        margin: auto;
+
+        .title {
+            color: $primary-color;
+            font-weight: bold;
+        }
+
+        p {
+            width: 70%;
+            margin: auto;
+        }
+
+        h2 {
+            @media screen and (max-width: 576px) {
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 80%;
+        }
+    }
+
+    .portfolio-images {
+        padding: 30px 0;
+
+        .card {
+            box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
+        }
+
+        .card-body {
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
+
+            p {
+                margin-bottom: 0;
+            }
+
+        }
+
+        a {
+            padding: 12px 20px;
+            margin: 35px auto;
+            display: block;
+            width: 135px;
+        }
+    }
+
+}
+
+/*-------------------------------*/
+/*       Price & Plan Section
+/*-------------------------------*/
+.price-plan {
+    background-image: url(../images/price-bg.jpg);
+    background-size: contain;
+    padding: 10px 0 50px;
+
+    .plan-txt {
+        .title {
+            color: $primary-color;
+            font-weight: bold;
+        }
+        h2{
+            @media screen and (max-width: 576px) {
+                font-size: 25px;
+            }
+        }
+
+        a {
+            padding: 12px;
+        }
+    }
+
+    .price1 {
+        padding: 30px;
+        box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
+        border-right: 4px solid $primary-color;
+        border-bottom: 4px solid $primary-color;
+        border-radius: 10px;
+        @media screen and (max-width: 576px) {
+            margin-top: 30px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 20px;
+
+            i {
+                font-size: 30px;
+                color: $primary-color;
+            }
+
+            h4 {
+                color: $primary-color;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: bolder;
+
+            span {
+                font-size: 18px;
+                color: #828181;
+            }
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+            li{
+                margin-top: 5px;
+                font-size: 14px;
+                color: #828181;
+                font-weight: 500;
+            }
+        }
+        p{
+            margin-top: 50px;
+            span{
+                color: red;
+                font-weight: bold;
+            }
+        }
+    }
+}
+/*-------------------------------*/
+/*       News Post Section
+/*-------------------------------*/
+.news-post{
+    padding: 70px 0;
+    background-image: url(../images/news-bg.jpg);
+    .news-post-headerText{
+        width: 40%;
+        text-align: center;
+        margin: auto;
+        @media screen and (max-width: 576px) {
+            width: 80%;
+        }
+        h2{
+            @media screen and (max-width: 576px) {
+                font-size: 25px;
+            }
+        }
+        .title{
+            color: $primary-color;
+            font-weight: bold;
+        }
+        p{
+            width: 65%;
+            margin: auto;
+            @media screen and (max-width: 576px) {
+                width: 75%;
+            }
+        }
+    }
+    .news-content{
+        
+        .card{
+            overflow: hidden;
+            transition: 0.5s;
+            img{
+                overflow: hidden;
+                transition: 0.5s;
+            }
+        }
+        .news-details{
+            margin-top: 45px;
+            box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
+            .card-body{
+                .dt{
+                    color: $primary-color;
+                }
+                
+                a{
+                    color: $primary-color;
+                    font-weight: bold;
+                    text-decoration: none;
+                    &::after{
+                        content: "";
+                        width: 5%;
+                        height: 2px;
+                        background: $primary-color;
+                        display: block;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            &:hover{
+                .card-body{
+                    a{
+                        &::after{
+                            content: "";
+                            width: 23%;
+                            height: 2px;
+                            background: $primary-color;
+                            display: block;
+                        } 
+                    }
+                    h5{
+                        color: $primary-color;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 }
