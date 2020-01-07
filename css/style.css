@@ -298,6 +298,17 @@ p {
 /*-------------------------------*/
 /*        About Section
 /*-------------------------------*/
+.about .about-txt, .services .service-header-txt, .portfolio .portfolio-headerTxt, .news-post .news-post-headerText {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+}
+
+.about .about-txt p, .services .service-header-txt p, .portfolio .portfolio-headerTxt p, .news-post .news-post-headerText p {
+  width: 65%;
+  margin: auto;
+}
+
 .about {
   padding: 70px 0px;
   background-image: url(../images/about-bg.jpg);
@@ -309,12 +320,6 @@ p {
     background-image: none;
     padding: 20px 0px;
   }
-}
-
-.about .about-txt {
-  width: 45%;
-  margin: auto;
-  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
@@ -406,12 +411,6 @@ p {
   .services {
     background-image: none;
   }
-}
-
-.services .service-header-txt {
-  width: 40%;
-  text-align: center;
-  margin: auto;
 }
 
 @media screen and (max-width: 576px) {
@@ -686,12 +685,6 @@ p {
   }
 }
 
-.portfolio .portfolio-headerTxt {
-  width: 40%;
-  text-align: center;
-  margin: auto;
-}
-
 .portfolio .portfolio-headerTxt .title {
   color: #2a57e6;
   font-weight: bold;
@@ -839,14 +832,8 @@ p {
 /*       News Post Section
 /*-------------------------------*/
 .news-post {
-  padding: 70px 0;
+  padding: 100px 0 70px;
   background-image: url(../images/news-bg.jpg);
-}
-
-.news-post .news-post-headerText {
-  width: 40%;
-  text-align: center;
-  margin: auto;
 }
 
 @media screen and (max-width: 576px) {

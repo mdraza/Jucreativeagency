@@ -33,14 +33,14 @@ p {
     font-size: 14px;
     line-height: 24px;
 }
-
+$primary-color: #2a57e6;
+@mixin margin($position, $value) {
+    margin-#{$position} : $value;
+}
 .btn {
-    background: #2a57e6;
+    background: $primary-color;
     color: #ffffff;
 }
-
-$primary-color: #2a57e6;
-
 /*-------------------------------*/
 /*        Navbar
 /*-------------------------------*/
@@ -70,7 +70,8 @@ $primary-color: #2a57e6;
         color: $primary-color;
         font-size: 20px;
         display: inline-block;
-        margin-left: 3px;
+        // margin-left: 3px;
+        @include margin(left, 3px);
         font-weight: 600;
     }
 }
@@ -86,7 +87,8 @@ $primary-color: #2a57e6;
 
     .navbar-brand {
         color: rgb(0, 0, 0);
-        margin-left: 10px;
+        // margin-left: 10px;
+        @include margin(left, 10px);
         @extend %logoTxt;
 
     }
@@ -94,8 +96,8 @@ $primary-color: #2a57e6;
     .navbar-toggler {
         color: #333333;
         border-color: rgba(255, 255, 255, .1);
-        margin-right: 10px;
-
+        // margin-right: 10px; 
+        @include margin(right, 10px);
         &:focus,
         &:hover {
             outline: none;
@@ -131,7 +133,8 @@ $primary-color: #2a57e6;
                 }
 
                 @media screen and (max-width: 576px) {
-                    margin-right: 20px;
+                    // margin-right: 20px;
+                    @include margin(right, 20px);
                     font-size: 18px;
                 }
             }
@@ -148,7 +151,8 @@ $primary-color: #2a57e6;
         }
 
         .nav-item:not(:last-child) .nav-link {
-            margin-right: 30px;
+            // margin-right: 30px;
+            @include margin(right, 30px);
         }
     }
 
@@ -159,7 +163,8 @@ $primary-color: #2a57e6;
             height: 2px;
             border-radius: 1px;
             background: rgb(80, 80, 80);
-            margin-top: 4px;
+            // margin-top: 4px;
+            @include margin(top, 4px);
         }
     }
 }
@@ -226,11 +231,13 @@ $primary-color: #2a57e6;
 
         .item {
             .header-txt {
-                margin-top: 200px;
+                // margin-top: 200px;
+                @include margin(top, 200px);
 
                 h1 {
                     font-size: 55px;
-                    margin-bottom: 20px;
+                    // margin-bottom: 20px;
+                    @include margin(bottom, 20px);
 
                     @media screen and (max-width: 576px) {
                         font-size: 35px;
@@ -239,8 +246,8 @@ $primary-color: #2a57e6;
                 }
 
                 p {
-                    margin-bottom: 20px;
-
+                    // margin-bottom: 20px;
+                    @include margin(bottom, 20px);
                     @media screen and (max-width: 576px) {
                         font-size: 16px;
                         text-align: center;
@@ -262,15 +269,17 @@ $primary-color: #2a57e6;
                 }
 
                 @media screen and (max-width: 576px) {
-                    margin-top: 20px;
+                    // margin-top: 20px;
+                    @include margin(top, 20px);
                 }
             }
 
             .header-img {
-                margin-top: 120px;
-
+                // margin-top: 120px;
+                @include margin(top, 120px);
                 @media screen and (max-width: 576px) {
-                    margin-top: 70px;
+                    // margin-top: 70px;
+                    @include margin(top, 70px);
                 }
 
                 img {
@@ -301,6 +310,15 @@ $primary-color: #2a57e6;
 /*-------------------------------*/
 /*        About Section
 /*-------------------------------*/
+%heading-txt{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    p{
+        width: 65%;
+        margin: auto;
+    }
+}
 .about {
     padding: 70px 0px;
     background-image: url(../images/about-bg.jpg);
@@ -312,9 +330,10 @@ $primary-color: #2a57e6;
     }
 
     .about-txt {
-        width: 45%;
-        margin: auto;
-        text-align: center;
+        // width: 45%;
+        // margin: auto;
+        // text-align: center;
+        @extend %heading-txt;
 
         @media screen and (max-width: 576px) {
             width: 100%;
@@ -344,10 +363,10 @@ $primary-color: #2a57e6;
     }
 
     .about-img {
-        margin-top: 30px;
-
+        // margin-top: 30px;
+        @include margin(top, 30px);
         @media screen and (max-width: 576px) {
-            margin-top: 20px;
+            @include margin(top, 20px);
         }
 
         img {
@@ -356,15 +375,15 @@ $primary-color: #2a57e6;
     }
 
     .about-txt2 {
-        margin-top: 140px;
-
+        // margin-top: 140px;
+        @include margin(top, 140px);
         @media screen and (max-width: 576px) {
-            margin-top: 0px;
+            // margin-top: 0px;
+            @include margin(top, 0px);
         }
 
         h2 {
             margin: 10px 0;
-
             @media screen and (max-width: 576px) {
                 font-size: 25px;
             }
@@ -395,9 +414,10 @@ $primary-color: #2a57e6;
     }
 
     .service-header-txt {
-        width: 40%;
-        text-align: center;
-        margin: auto;
+        // width: 40%;
+        // text-align: center;
+        // margin: auto;
+        @extend %heading-txt;
 
         @media screen and (max-width: 576px) {
             width: 90%;
@@ -530,8 +550,8 @@ $primary-color: #2a57e6;
     background-image: url(../images/testimonial-bg.jpg);
 
     .testimonial-headTxtImg {
-        margin-top: 30px;
-
+        // margin-top: 30px;
+        @include margin(top, 30px);
         small {
             color: $primary-color;
             font-weight: bold;
@@ -555,10 +575,11 @@ $primary-color: #2a57e6;
 
                 li {
                     display: inline-block;
-                    margin-right: 5px;
-
+                    // margin-right: 5px;
+                    @include margin(right, 5px);
                     @media screen and (max-width: 576px) {
-                        margin-right: 0px;
+                        // margin-right: 0px;
+                        @include margin(right, 0px);
                         width: 64px;
                     }
 
@@ -582,12 +603,12 @@ $primary-color: #2a57e6;
 
         .textmoTxt {
             padding: 110px;
-            margin-top: 30px;
-
+            // margin-top: 30px;
+            @include margin(top, 30px);
             @media screen and (max-width: 576px) {
                 padding: 25px;
-                margin-top: 75px;
-
+                // margin-top: 75px;
+                @include margin(top, 75px);
                 p {
                     font-size: 12px;
                 }
@@ -597,14 +618,16 @@ $primary-color: #2a57e6;
                 h5 {
                     @media screen and (max-width: 576px) {
                         font-size: 18px;
-                        margin-left: 10px;
+                        // margin-left: 10px;
+                        @include margin(left, 10px);
                     }
                 }
 
                 p {
                     @media screen and (max-width: 576px) {
                         font-size: 10px;
-                        margin-left: 20px;
+                        // margin-left: 20px;
+                        @include margin(left, 20px);
                     }
                 }
             }
@@ -663,9 +686,7 @@ $primary-color: #2a57e6;
     }
 
     .portfolio-headerTxt {
-        width: 40%;
-        text-align: center;
-        margin: auto;
+        @extend %heading-txt;
 
         .title {
             color: $primary-color;
@@ -749,7 +770,8 @@ $primary-color: #2a57e6;
         border-radius: 10px;
 
         @media screen and (max-width: 576px) {
-            margin-top: 30px;
+            // margin-top: 30px;
+            @include margin(top, 30px);
         }
 
         .title {
@@ -784,10 +806,12 @@ $primary-color: #2a57e6;
             list-style-type: none;
             margin: 0;
             padding: 0;
-            margin-top: 20px;
+            // margin-top: 20px;
+            @include margin(top, 20px);
 
             li {
-                margin-top: 5px;
+                // margin-top: 5px;
+                @include margin(top, 5px);
                 font-size: 14px;
                 color: #828181;
                 font-weight: 500;
@@ -795,8 +819,8 @@ $primary-color: #2a57e6;
         }
 
         p {
-            margin-top: 50px;
-
+            // margin-top: 50px;
+            @include margin(top, 50px);
             span {
                 color: red;
                 font-weight: bold;
@@ -809,13 +833,11 @@ $primary-color: #2a57e6;
 /*       News Post Section
 /*-------------------------------*/
 .news-post {
-    padding: 70px 0;
+    padding: 100px 0 70px;
     background-image: url(../images/news-bg.jpg);
 
     .news-post-headerText {
-        width: 40%;
-        text-align: center;
-        margin: auto;
+        @extend %heading-txt;
 
         @media screen and (max-width: 576px) {
             width: 90%;
@@ -916,7 +938,8 @@ $primary-color: #2a57e6;
     .footer-content1 {
         p {
             padding: 8px 0;
-            margin-right: 20px;
+            // margin-right: 20px;
+            @include margin(right, 20px);
         }
 
         .footer-logo {
@@ -924,15 +947,16 @@ $primary-color: #2a57e6;
         }
 
         .footer-icons {
-            margin-top: 25px;
-
+            // margin-top: 25px;
+            @include margin(top, 25px);
             ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
 
                 li:not(:first-child) {
-                    margin-left: 15px;
+                    // margin-left: 15px;
+                    @include margin(left, 15px);
                 }
 
                 li {
@@ -967,7 +991,8 @@ $primary-color: #2a57e6;
         margin: 10px 0 23px;
         @media screen and (max-width: 576px) {
             font-size: 20px;
-            margin-top: 40px;
+            // margin-top: 40px;
+            @include margin(top, 40px);
         }
     }
 
@@ -983,8 +1008,8 @@ $primary-color: #2a57e6;
             padding: 0;
 
             li {
-                margin-top: 7px;
-
+                // margin-top: 7px;
+                @include margin(top, 7px);
                 a {
                     text-decoration: none;
                     color: #828181;
@@ -1025,10 +1050,12 @@ $primary-color: #2a57e6;
     .footer-txt{
         text-align: center;
         padding: 20px 0 5px;
-        margin-top: 100px;
+        // margin-top: 100px;
+        @include margin(top, 100px);
         border-top: 1px solid rgb(243, 242, 242);
         @media screen and (max-width: 576px) {
-            margin-top: 60px;
+            // margin-top: 60px;
+            @include margin(top, 60px);
         }
     }
 }
