@@ -680,9 +680,10 @@ $primary-color: #2a57e6;
 /*       Portfolio Section
 /*-------------------------------*/
 .portfolio {
-    padding: 70px 0;
+    padding: 70px 0 30px;
     background-image: url(../images/portfolio-bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and (max-width: 576px) {
         background-image: none;
@@ -1027,7 +1028,9 @@ $primary-color: #2a57e6;
         h5 {
             @extend .footer-heading;
         }
-
+        p{
+            margin-bottom: 30px;
+        }
         .input-group {
             input {
                 box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);

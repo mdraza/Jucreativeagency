@@ -685,9 +685,10 @@ p {
 /*       Portfolio Section
 /*-------------------------------*/
 .portfolio {
-  padding: 70px 0;
+  padding: 70px 0 30px;
   background-image: url(../images/portfolio-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 576px) {
@@ -1017,6 +1018,10 @@ p {
 
 .footer .footer-content2 ul li a:hover {
   color: #2a57e6;
+}
+
+.footer .footer-content3 p {
+  margin-bottom: 30px;
 }
 
 .footer .footer-content3 .input-group input {
