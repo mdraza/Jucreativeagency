@@ -40,6 +40,10 @@ p {
   color: #ffffff;
 }
 
+.active {
+  color: #0b3feb !important;
+}
+
 /*-------------------------------*/
 /*        Navbar
 /*-------------------------------*/
@@ -114,7 +118,7 @@ p {
 
 @media screen and (max-width: 576px) {
   .navbar .navbar-nav .nav-item {
-    padding: 15px 0;
+    padding: 12px 0;
   }
 }
 
@@ -145,7 +149,6 @@ p {
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #0b3feb;
-  font-weight: bold;
 }
 
 .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
@@ -298,13 +301,13 @@ p {
 /*-------------------------------*/
 /*        About Section
 /*-------------------------------*/
-.about .about-txt, .services .service-header-txt, .portfolio .portfolio-headerTxt, .news-post .news-post-headerText {
+.about .about-txt, .services .service-header-txt, .portfolio .portfolio-headerTxt, .news-post .news-post-headerText, .service-detail .service-header-txt {
   width: 45%;
   margin: auto;
   text-align: center;
 }
 
-.about .about-txt p, .services .service-header-txt p, .portfolio .portfolio-headerTxt p, .news-post .news-post-headerText p {
+.about .about-txt p, .services .service-header-txt p, .portfolio .portfolio-headerTxt p, .news-post .news-post-headerText p, .service-detail .service-header-txt p {
   width: 65%;
   margin: auto;
 }
@@ -313,6 +316,14 @@ p {
   padding: 70px 0px;
   background-image: url(../images/about-bg.jpg);
   background-size: cover;
+}
+
+.about .video-icon i {
+  position: absolute;
+  top: 51%;
+  left: 43%;
+  font-size: 50px;
+  color: #2a57e6;
 }
 
 @media screen and (max-width: 576px) {
@@ -551,6 +562,7 @@ p {
 /*-------------------------------*/
 .testimonial {
   background-image: url(../images/testimonial-bg.jpg);
+  padding: 30px 0 70px;
 }
 
 .testimonial .testimonial-headTxtImg {
@@ -740,7 +752,7 @@ p {
 .price-plan {
   background-image: url(../images/price-bg.jpg);
   background-size: contain;
-  padding: 10px 0 50px;
+  padding: 50px 0 70px;
 }
 
 .price-plan .plan-txt .title {
@@ -762,8 +774,8 @@ p {
   padding: 30px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
           box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
-  border-right: 4px solid #2a57e6;
-  border-bottom: 4px solid #2a57e6;
+  border-right: 3px solid #2a57e6;
+  border-bottom: 2px solid #2a57e6;
   border-radius: 10px;
 }
 
@@ -1037,5 +1049,271 @@ p {
   .footer .footer-txt {
     margin-top: 60px;
   }
+}
+
+.scroll-top {
+  width: 44px;
+  line-height: 44px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: none;
+  background: #2c57e4;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+/*--------------------------------********************------------------------*/
+/*                                   About Us Page
+/*--------------------------------********************------------------------*/
+.header2 {
+  height: 400px;
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+  background-image: url(../images/page-header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.header2 .head-txt {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.header2 .head-txt h1 {
+  font-size: 45px;
+}
+
+@media screen and (max-width: 576px) {
+  .header2 .head-txt h1 {
+    font-size: 40px;
+  }
+}
+
+.header2 .head-txt h1 span {
+  color: #2a57e6;
+}
+
+.header2 .head-txt p {
+  font-size: 16px;
+  color: #2a57e6;
+}
+
+.header2 .head-txt p a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.about-mission-vision {
+  padding: 70px 0;
+}
+
+.about-mission-vision .abt-mis-vis-content .title {
+  color: #2a57e6;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.about-mission-vision .abt-mis-vis-content h2 {
+  padding: 0 0 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .about-mission-vision .abt-mis-vis-content h2 {
+    font-size: 25px;
+  }
+}
+
+/*--------------------------------********************------------------------*/
+/*                                    Services Page Section
+/*--------------------------------********************------------------------*/
+.service-detail {
+  padding: 70px 0 120px;
+}
+
+@media screen and (max-width: 576px) {
+  .service-detail .service-header-txt {
+    width: 90%;
+  }
+}
+
+.service-detail .service-header-txt h2 {
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 576px) {
+  .service-detail .service-header-txt h2 {
+    font-size: 25px;
+  }
+}
+
+.service-detail .service-header-txt p {
+  width: 55%;
+  margin: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .service-detail .service-header-txt p {
+    width: 85%;
+  }
+}
+
+.service-detail .service-content {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 25px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
+          box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.service-detail .service-content:hover {
+  background: #2a57e6;
+}
+
+.service-detail .service-content:hover h4,
+.service-detail .service-content:hover p {
+  color: #fff;
+}
+
+.service-detail .service-content:hover .servivce-txt a {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.service-detail .service-content:hover .servivce-txt a::after {
+  width: 25%;
+  background-color: #ffffff;
+}
+
+.service-detail .service-content .icon-wrap {
+  color: #2a57e6;
+  font-size: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0px;
+}
+
+.service-detail .service-content .icon-wrap i {
+  z-index: 2;
+  font-size: 35px;
+}
+
+.service-detail .service-content .icon-wrap svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30%;
+}
+
+.service-detail .service-content .servivce-txt {
+  padding: 0 0 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.service-detail .service-content .servivce-txt h4 {
+  font-size: 22px;
+}
+
+.service-detail .service-content .servivce-txt a {
+  color: #2a57e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.service-detail .service-content .servivce-txt a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 8%;
+  height: 2px;
+  background-color: #2a57e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*--------------------------------********************------------------------*/
+/*                                Contact Page Section
+/*--------------------------------********************------------------------*/
+.contact-form {
+  padding: 80px 0 30px;
+}
+
+.contact-form .contact-header-txt {
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-form .contact-header-txt {
+    width: 90%;
+  }
+}
+
+.contact-form .contact-header-txt h2 {
+  text-align: center;
+}
+
+.contact-form .contact-header-txt h2 span {
+  color: #2a57e6;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-form .contact-header-txt h2 {
+    font-size: 25px;
+  }
+}
+
+.contact-form .input-field {
+  padding: 50px;
+}
+
+.contact-form .input-field form button {
+  padding: 12px 20px;
+  margin: auto;
+  display: block;
+}
+
+.contact-details {
+  padding: 0 0 60px;
+}
+
+.contact-details .contact-txt {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
+          box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
+  padding: 45px;
+  text-align: center;
+  border-bottom: 3px solid #2a57e6;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.contact-details .contact-txt h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
