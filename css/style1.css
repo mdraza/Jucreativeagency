@@ -90,12 +90,7 @@ p {
 
 .navbar .navbar-brand {
   color: black;
-}
-
-@media screen and (max-width: 576px) {
-  .navbar .navbar-brand {
-    margin-left: 15px;
-  }
+  margin-left: 10px;
 }
 
 .navbar .navbar-toggler {
@@ -160,12 +155,6 @@ p {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 769px) {
-  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
-    margin-right: 8px;
-  }
-}
-
 .navbar .navbar-toggler .icon-bar {
   display: block;
   width: 22px;
@@ -205,31 +194,12 @@ p {
   background: #111;
 }
 
-@media (max-width: 769px) {
-  .navbar-expand-md .navbar-nav {
-    -ms-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    margin-top: -40px;
-  }
-  .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid,
-  .navbar-expand-md > .container-lg,
-  .navbar-expand-md > .container-md,
-  .navbar-expand-md > .container-sm,
-  .navbar-expand-md > .container-xl {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 /*-------------------------------*/
 /*        Header
 /*-------------------------------*/
 .header {
   position: relative;
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   background-image: url(../images/header-bg.jpg);
@@ -240,13 +210,7 @@ p {
 @media screen and (max-width: 576px) {
   .header {
     background-image: none;
-    height: 700px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .header {
-    height: 105vh;
+    height: 665px;
   }
 }
 
@@ -262,13 +226,6 @@ p {
   margin-top: 200px;
 }
 
-@media screen and (max-width: 770px) {
-  .header .wraper .item .header-txt {
-    margin-top: 30px;
-    text-align: center;
-  }
-}
-
 .header .wraper .item .header-txt h1 {
   font-size: 55px;
   margin-bottom: 20px;
@@ -276,14 +233,8 @@ p {
 
 @media screen and (max-width: 576px) {
   .header .wraper .item .header-txt h1 {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .header .wraper .item .header-txt h1 {
-    font-size: 55px;
   }
 }
 
@@ -302,13 +253,12 @@ p {
   color: #2a57e6;
 }
 
-.header .wraper .item .header-txt a {
+.header .wraper .item .header-txt button {
   padding: 12px 20px;
-  display: inline-block;
 }
 
 @media screen and (max-width: 576px) {
-  .header .wraper .item .header-txt a {
+  .header .wraper .item .header-txt button {
     margin: auto;
     display: block;
     font-size: 18px;
@@ -340,7 +290,6 @@ p {
 /*-------------------------------*/
 .brands {
   padding: 70px 0;
-  background: #f9fbfe;
 }
 
 .brands .owl-carousel .item img {
@@ -352,23 +301,24 @@ p {
 /*-------------------------------*/
 /*        About Section
 /*-------------------------------*/
-.about .about-txt, .about-about-section .about-txt, .services .service-header-txt, .portfolio .portfolio-headerTxt, .our-team .portfolio-headerTxt, .portfolio-section .portfolio-headerTxt, .news-post .news-post-headerText, .service-detail .service-header-txt {
-  width: 54%;
+.about .about-txt, .services .service-header-txt, .portfolio .portfolio-headerTxt, .news-post .news-post-headerText, .service-detail .service-header-txt {
+  width: 45%;
   margin: auto;
   text-align: center;
 }
 
-.about .about-txt p, .about-about-section .about-txt p, .services .service-header-txt p, .portfolio .portfolio-headerTxt p, .our-team .portfolio-headerTxt p, .portfolio-section .portfolio-headerTxt p, .news-post .news-post-headerText p, .service-detail .service-header-txt p {
+.about .about-txt p, .services .service-header-txt p, .portfolio .portfolio-headerTxt p, .news-post .news-post-headerText p, .service-detail .service-header-txt p {
   width: 65%;
   margin: auto;
 }
 
-.about, .about-about-section {
+.about {
+  padding: 70px 0px;
   background-image: url(../images/about-bg.jpg);
   background-size: cover;
 }
 
-.about .video-icon i, .about-about-section .video-icon i {
+.about .video-icon i {
   position: absolute;
   top: 51%;
   left: 43%;
@@ -377,112 +327,100 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-  .about .about-txt, .about-about-section .about-txt {
+  .about {
+    background-image: none;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about .about-txt {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 770px) {
-  .about .about-txt, .about-about-section .about-txt {
-    width: 80%;
-  }
-}
-
-.about .about-txt h2, .about-about-section .about-txt h2 {
+.about .about-txt h2 {
   font-weight: 600;
   line-height: 1.3;
 }
 
 @media screen and (max-width: 576px) {
-  .about .about-txt h2, .about-about-section .about-txt h2 {
-    font-size: 22px;
+  .about .about-txt h2 {
+    font-size: 25px;
   }
 }
 
-.about .about-txt span, .about-about-section .about-txt span {
+.about .about-txt span {
   color: #2a57e6;
 }
 
-.about .about-txt p, .about-about-section .about-txt p {
+.about .about-txt p {
   width: 65%;
   margin: auto;
 }
 
 @media screen and (max-width: 576px) {
-  .about .about-txt p, .about-about-section .about-txt p {
+  .about .about-txt p {
     width: 79%;
   }
 }
 
-.about .about-img, .about-about-section .about-img {
-  margin-top: 45px;
+.about .about-img {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 576px) {
-  .about .about-img, .about-about-section .about-img {
+  .about .about-img {
     margin-top: 20px;
   }
 }
 
-.about .about-img img, .about-about-section .about-img img {
+.about .about-img img {
   width: 100%;
 }
 
-.about .about-txt2, .about-about-section .about-txt2 {
-  margin-top: 90px;
+.about .about-txt2 {
+  margin-top: 140px;
 }
 
 @media screen and (max-width: 576px) {
-  .about .about-txt2, .about-about-section .about-txt2 {
-    margin-top: 20px;
+  .about .about-txt2 {
+    margin-top: 0px;
   }
 }
 
-.about .about-txt2 h2, .about-about-section .about-txt2 h2 {
+.about .about-txt2 h2 {
   margin: 10px 0;
 }
 
 @media screen and (max-width: 576px) {
-  .about .about-txt2 h2, .about-about-section .about-txt2 h2 {
-    font-size: 22px;
+  .about .about-txt2 h2 {
+    font-size: 25px;
   }
 }
 
-.about .about-txt2 small, .about-about-section .about-txt2 small {
+.about .about-txt2 small {
   color: #2a57e6;
   font-size: 14px;
   font-weight: bold;
 }
 
-.about .about-txt2 a, .about-about-section .about-txt2 a {
+.about .about-txt2 button {
   padding: 12px 20px;
-}
-
-.about {
-  padding: 90px 0px 95px;
-}
-
-@media screen and (max-width: 576px) {
-  .about {
-    background-image: none;
-    padding: 50px 0px;
-  }
 }
 
 /*-------------------------------*/
 /*        Our Services
 /*-------------------------------*/
 .services {
-  padding: 85px 0 50px;
+  padding: 70px 0;
   background-image: url(../images/service-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media screen and (max-width: 576px) {
   .services {
     background-image: none;
-    padding: 18px 0 15px;
   }
 }
 
@@ -520,7 +458,7 @@ p {
 }
 
 .services .service-box {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 @media screen and (max-width: 576px) {
@@ -538,7 +476,6 @@ p {
           box-shadow: 0px 0px 30px 0px rgba(34, 34, 34, 0.08);
   border-radius: 8px;
   margin: 15px;
-  background: #fff;
 }
 
 .services .service-box .service-content .icon-wrap {
@@ -567,7 +504,7 @@ p {
   left: 0;
   right: 0;
   margin: auto;
-  width: 33%;
+  width: 30%;
 }
 
 .services .service-box .service-content .servivce-txt {
@@ -623,235 +560,218 @@ p {
 /*-------------------------------*/
 /*       Testimonial Section
 /*-------------------------------*/
-.testimonial .testimonial-headTxtImg, .portfolio-testimonial-section .testimonial-headTxtImg {
+.testimonial {
+  background-image: url(../images/testimonial-bg.jpg);
+  padding: 30px 0 70px;
+}
+
+.testimonial .testimonial-headTxtImg {
   margin-top: 30px;
 }
 
-.testimonial .testimonial-headTxtImg small, .portfolio-testimonial-section .testimonial-headTxtImg small {
+.testimonial .testimonial-headTxtImg small {
   color: #2a57e6;
   font-weight: bold;
   font-size: 14px;
 }
 
-.testimonial .testimonial-headTxtImg h2, .portfolio-testimonial-section .testimonial-headTxtImg h2 {
+.testimonial .testimonial-headTxtImg h2 {
   padding: 8px 0;
   line-height: 1.3;
 }
 
 @media screen and (max-width: 576px) {
-  .testimonial .testimonial-headTxtImg h2, .portfolio-testimonial-section .testimonial-headTxtImg h2 {
+  .testimonial .testimonial-headTxtImg h2 {
     font-size: 25px;
   }
 }
 
-.testimonial .testimonial-headTxtImg .t-image ul, .portfolio-testimonial-section .testimonial-headTxtImg .t-image ul {
+.testimonial .testimonial-headTxtImg .t-image ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.testimonial .testimonial-headTxtImg .t-image ul li, .portfolio-testimonial-section .testimonial-headTxtImg .t-image ul li {
+.testimonial .testimonial-headTxtImg .t-image ul li {
   display: inline-block;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 576px) {
-  .testimonial .testimonial-headTxtImg .t-image ul li, .portfolio-testimonial-section .testimonial-headTxtImg .t-image ul li {
+  .testimonial .testimonial-headTxtImg .t-image ul li {
     margin-right: 0px;
     width: 64px;
   }
 }
 
-.testimonial .testimonial-headTxtImg .t-image ul li a, .portfolio-testimonial-section .testimonial-headTxtImg .t-image ul li a {
+.testimonial .testimonial-headTxtImg .t-image ul li a {
   text-decoration: none;
 }
 
-.testimonial .testimonial-headTxtImg .t-image ul li a img, .portfolio-testimonial-section .testimonial-headTxtImg .t-image ul li a img {
+.testimonial .testimonial-headTxtImg .t-image ul li a img {
   width: 100%;
 }
 
-.testimonial .testimonial-txt, .portfolio-testimonial-section .testimonial-txt {
+.testimonial .testimonial-txt {
   background-image: url(../images/t-slider-bg.png);
   background-size: 100% 100%;
 }
 
-.testimonial .testimonial-txt .textmoTxt, .portfolio-testimonial-section .testimonial-txt .textmoTxt {
+.testimonial .testimonial-txt .textmoTxt {
   padding: 110px;
   margin-top: 30px;
 }
 
 @media screen and (max-width: 576px) {
-  .testimonial .testimonial-txt .textmoTxt, .portfolio-testimonial-section .testimonial-txt .textmoTxt {
+  .testimonial .testimonial-txt .textmoTxt {
     padding: 25px;
     margin-top: 75px;
   }
-  .testimonial .testimonial-txt .textmoTxt p, .portfolio-testimonial-section .testimonial-txt .textmoTxt p {
+  .testimonial .testimonial-txt .textmoTxt p {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .testimonial .testimonial-txt .textmoTxt .testDetail h5, .portfolio-testimonial-section .testimonial-txt .textmoTxt .testDetail h5 {
+  .testimonial .testimonial-txt .textmoTxt .testDetail h5 {
     font-size: 18px;
     margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .testimonial .testimonial-txt .textmoTxt .testDetail p, .portfolio-testimonial-section .testimonial-txt .textmoTxt .testDetail p {
+  .testimonial .testimonial-txt .textmoTxt .testDetail p {
     font-size: 10px;
     margin-left: 20px;
   }
 }
 
-.testimonial .testimonial-txt .owl-theme .owl-nav, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav {
+.testimonial .testimonial-txt .owl-theme .owl-nav {
   position: absolute;
   top: 60%;
   left: 60%;
 }
 
-.testimonial .testimonial-txt .owl-theme .owl-nav:hover, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav:hover {
+.testimonial .testimonial-txt .owl-theme .owl-nav:hover {
   background: transparent !important;
   color: #333333 !important;
 }
 
-.testimonial .testimonial-txt .owl-theme .owl-nav button i, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav button i {
+.testimonial .testimonial-txt .owl-theme .owl-nav button i {
   font-size: 30px;
 }
 
 @media screen and (max-width: 576px) {
-  .testimonial .testimonial-txt .owl-theme .owl-nav button i, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav button i {
+  .testimonial .testimonial-txt .owl-theme .owl-nav button i {
     font-size: 20px;
   }
 }
 
-.testimonial .testimonial-txt .owl-theme .owl-nav button:hover, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav button:hover, .testimonial .testimonial-txt .owl-theme .owl-nav button:focus, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav button:focus, .testimonial .testimonial-txt .owl-theme .owl-nav button:active, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav button:active {
+.testimonial .testimonial-txt .owl-theme .owl-nav button:hover, .testimonial .testimonial-txt .owl-theme .owl-nav button:focus, .testimonial .testimonial-txt .owl-theme .owl-nav button:active {
   background-color: transparent;
   color: #333333;
   outline: none;
 }
 
 @media screen and (max-width: 576px) {
-  .testimonial .testimonial-txt .owl-theme .owl-nav, .portfolio-testimonial-section .testimonial-txt .owl-theme .owl-nav {
+  .testimonial .testimonial-txt .owl-theme .owl-nav {
     position: absolute;
     top: 75%;
     left: 40%;
   }
 }
 
-.testimonial {
-  background-image: url(../images/testimonial-bg.jpg);
-  padding: 85px 0;
-}
-
-@media screen and (max-width: 576px) {
-  .testimonial {
-    padding: 0px 0px 50px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .testimonial {
-    margin-top: 30px;
-    text-align: center;
-    width: 70%;
-    margin: auto;
-  }
-}
-
 /*-------------------------------*/
 /*       Portfolio Section
 /*-------------------------------*/
-.portfolio, .our-team, .portfolio-section {
+.portfolio {
+  padding: 70px 0 30px;
+  background-image: url(../images/portfolio-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media screen and (max-width: 576px) {
-  .portfolio, .our-team, .portfolio-section {
+  .portfolio {
     background-image: none;
     padding: 70px 0 30px;
   }
 }
 
-.portfolio .portfolio-headerTxt .title, .our-team .portfolio-headerTxt .title, .portfolio-section .portfolio-headerTxt .title {
+.portfolio .portfolio-headerTxt .title {
   color: #2a57e6;
   font-weight: bold;
 }
 
-.portfolio .portfolio-headerTxt p, .our-team .portfolio-headerTxt p, .portfolio-section .portfolio-headerTxt p {
+.portfolio .portfolio-headerTxt p {
   width: 70%;
   margin: auto;
 }
 
 @media screen and (max-width: 576px) {
-  .portfolio .portfolio-headerTxt h2, .our-team .portfolio-headerTxt h2, .portfolio-section .portfolio-headerTxt h2 {
+  .portfolio .portfolio-headerTxt h2 {
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .portfolio .portfolio-headerTxt, .our-team .portfolio-headerTxt, .portfolio-section .portfolio-headerTxt {
+  .portfolio .portfolio-headerTxt {
     width: 90%;
   }
 }
 
-.portfolio .portfolio-images, .our-team .portfolio-images, .portfolio-section .portfolio-images {
-  padding: 37px 0;
+.portfolio .portfolio-images {
+  padding: 30px 0;
 }
 
-.portfolio .portfolio-images .card, .our-team .portfolio-images .card, .portfolio-section .portfolio-images .card {
+.portfolio .portfolio-images .card {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
           box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
 }
 
-.portfolio .portfolio-images .card-body, .our-team .portfolio-images .card-body, .portfolio-section .portfolio-images .card-body {
+.portfolio .portfolio-images .card-body {
   padding: 18px;
   text-align: center;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
           box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
 }
 
-.portfolio .portfolio-images .card-body p, .our-team .portfolio-images .card-body p, .portfolio-section .portfolio-images .card-body p {
+.portfolio .portfolio-images .card-body p {
   margin-bottom: 0;
 }
 
-.portfolio .portfolio-images a, .our-team .portfolio-images a, .portfolio-section .portfolio-images a {
+.portfolio .portfolio-images a {
   padding: 12px 20px;
   margin: 35px auto;
   display: block;
   width: 135px;
 }
 
-.portfolio {
-  padding: 80px 0 30px;
-  background-image: url(../images/portfolio-bg.jpg);
-}
-
 /*-------------------------------*/
 /*       Price & Plan Section
 /*-------------------------------*/
-.price-plan, .service-price-section, .portfolio-price-section {
+.price-plan {
   background-image: url(../images/price-bg.jpg);
   background-size: contain;
+  padding: 50px 0 70px;
 }
 
-.price-plan .plan-txt .title, .service-price-section .plan-txt .title, .portfolio-price-section .plan-txt .title {
+.price-plan .plan-txt .title {
   color: #2a57e6;
   font-weight: bold;
-  margin-top: 35px;
 }
 
 @media screen and (max-width: 576px) {
-  .price-plan .plan-txt h2, .service-price-section .plan-txt h2, .portfolio-price-section .plan-txt h2 {
+  .price-plan .plan-txt h2 {
     font-size: 25px;
   }
 }
 
-.price-plan .plan-txt a, .service-price-section .plan-txt a, .portfolio-price-section .plan-txt a {
+.price-plan .plan-txt a {
   padding: 12px;
 }
 
-.price-plan .price1, .service-price-section .price1, .portfolio-price-section .price1 {
+.price-plan .price1 {
   padding: 30px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
           box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
@@ -861,12 +781,12 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-  .price-plan .price1, .service-price-section .price1, .portfolio-price-section .price1 {
+  .price-plan .price1 {
     margin-top: 30px;
   }
 }
 
-.price-plan .price1 .title, .service-price-section .price1 .title, .portfolio-price-section .price1 .title {
+.price-plan .price1 .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,79 +796,57 @@ p {
   margin: 0 0 20px;
 }
 
-.price-plan .price1 .title i, .service-price-section .price1 .title i, .portfolio-price-section .price1 .title i {
+.price-plan .price1 .title i {
   font-size: 30px;
   color: #2a57e6;
 }
 
-.price-plan .price1 .title h4, .service-price-section .price1 .title h4, .portfolio-price-section .price1 .title h4 {
+.price-plan .price1 .title h4 {
   color: #2a57e6;
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
 }
 
-.price-plan .price1 h2, .service-price-section .price1 h2, .portfolio-price-section .price1 h2 {
+.price-plan .price1 h2 {
   font-size: 30px;
   font-weight: bolder;
 }
 
-.price-plan .price1 h2 span, .service-price-section .price1 h2 span, .portfolio-price-section .price1 h2 span {
+.price-plan .price1 h2 span {
   font-size: 18px;
   color: #828181;
 }
 
-.price-plan .price1 ul, .service-price-section .price1 ul, .portfolio-price-section .price1 ul {
+.price-plan .price1 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-top: 20px;
 }
 
-.price-plan .price1 ul li, .service-price-section .price1 ul li, .portfolio-price-section .price1 ul li {
+.price-plan .price1 ul li {
   margin-top: 5px;
   font-size: 14px;
   color: #828181;
   font-weight: 500;
 }
 
-.price-plan .price1 p, .service-price-section .price1 p, .portfolio-price-section .price1 p {
+.price-plan .price1 p {
   margin-top: 50px;
 }
 
-.price-plan .price1 p span, .service-price-section .price1 p span, .portfolio-price-section .price1 p span {
+.price-plan .price1 p span {
   color: red;
   font-weight: bold;
-}
-
-.price-plan {
-  padding: 72px 0 95px;
-}
-
-@media screen and (max-width: 576px) {
-  .price-plan {
-    padding: 0px 0 60px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .price-plan .media-margin {
-    margin-top: 50px;
-  }
 }
 
 /*-------------------------------*/
 /*       News Post Section
 /*-------------------------------*/
 .news-post {
-  padding: 0 0 100px;
+  padding: 100px 0 70px;
   background-image: url(../images/news-bg.jpg);
-}
-
-@media screen and (max-width: 576px) {
-  .news-post {
-    padding: 0 0 60px;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -992,7 +890,7 @@ p {
 }
 
 .news-post .news-content .news-details {
-  margin-top: 52px;
+  margin-top: 45px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
           box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.13);
 }
@@ -1009,7 +907,7 @@ p {
 
 .news-post .news-content .news-details .card-body a::after {
   content: "";
-  width: 8%;
+  width: 5%;
   height: 2px;
   background: #2a57e6;
   display: block;
@@ -1019,7 +917,7 @@ p {
 
 .news-post .news-content .news-details:hover .card-body a::after {
   content: "";
-  width: 28%;
+  width: 23%;
   height: 2px;
   background: #2a57e6;
   display: block;
@@ -1034,8 +932,9 @@ p {
 /*       Footer Section
 /*-------------------------------*/
 .footer {
-  padding: 70px 0 1px;
-  background: #f7fbfe;
+  padding: 70px 0 0;
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
 }
 
 @media screen and (max-width: 576px) {
@@ -1214,8 +1113,6 @@ p {
 .header2 .head-txt p {
   font-size: 16px;
   color: #2a57e6;
-  font-weight: bold;
-  margin-top: 10px;
 }
 
 .header2 .head-txt p a {
@@ -1223,12 +1120,8 @@ p {
   color: #333333;
 }
 
-.about-about-section {
-  padding: 90px 0 50px;
-}
-
 .about-mission-vision {
-  padding: 0 0 78px;
+  padding: 70px 0;
 }
 
 .about-mission-vision .abt-mis-vis-content .title {
@@ -1247,30 +1140,16 @@ p {
   }
 }
 
-.our-team {
-  padding: 92px 0 0px;
-}
-
 /*--------------------------------********************------------------------*/
 /*                                    Services Page Section
 /*--------------------------------********************------------------------*/
 .service-detail {
-  padding: 70px 0 8px;
-}
-
-.service-detail .service-header-txt {
-  margin-bottom: 30px;
+  padding: 70px 0 120px;
 }
 
 @media screen and (max-width: 576px) {
   .service-detail .service-header-txt {
     width: 90%;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .service-detail .service-header-txt {
-    width: 80%;
   }
 }
 
@@ -1382,30 +1261,11 @@ p {
   transition: 0.5s;
 }
 
-.service-price-section {
-  padding: 0 0 95px;
-}
-
-/*--------------------------------********************------------------------*/
-/*                                Portfolio Page Section
-/*--------------------------------********************------------------------*/
-.portfolio-section {
-  padding: 80px 0 0;
-}
-
-.portfolio-testimonial-section {
-  padding: 50px 0;
-}
-
-.portfolio-price-section {
-  padding: 40px 0 100px;
-}
-
 /*--------------------------------********************------------------------*/
 /*                                Contact Page Section
 /*--------------------------------********************------------------------*/
 .contact-form {
-  padding: 90px 0 30px;
+  padding: 80px 0 30px;
 }
 
 .contact-form .contact-header-txt {
@@ -1444,7 +1304,7 @@ p {
 }
 
 .contact-details {
-  padding: 5px 0 100px;
+  padding: 0 0 60px;
 }
 
 .contact-details .contact-txt {
@@ -1461,4 +1321,4 @@ p {
   font-size: 22px;
   margin-bottom: 15px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style1.css.map */
