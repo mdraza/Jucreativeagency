@@ -731,7 +731,7 @@ p {
 @media screen and (max-width: 576px) {
   .testimonial .testimonial-txt .textmoTxt .testDetail p, .portfolio-testimonial-section .testimonial-txt .textmoTxt .testDetail p {
     font-size: 10px;
-    margin-left: -20px;
+    margin-left: 23px;
   }
 }
 

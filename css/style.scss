@@ -742,7 +742,7 @@ $primary-color: #2a57e6;
                 p {
                     @media screen and (max-width: 576px) {
                         font-size: 10px;
-                        @include margin(left, -20px);
+                        @include margin(left, 23px);
                     }
                 }
             }
