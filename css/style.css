@@ -108,7 +108,7 @@ p {
   outline: none;
 }
 
-.navbar .navbar-toggler .fas {
+.navbar .navbar-toggler .fa {
   color: #000912;
 }
 
@@ -278,7 +278,7 @@ p {
 }
 
 .nav-scroll .navbar-toggler .icon-bar {
-  background: #111;
+  width: 100%;
 }
 
 /*-------------------------------*/
@@ -301,12 +301,6 @@ p {
   }
 }
 
-@media screen and (max-width: 770px) {
-  .header {
-    height: 105vh;
-  }
-}
-
 .header .wraper {
   height: 100%;
   position: absolute;
@@ -319,13 +313,6 @@ p {
   margin-top: 200px;
 }
 
-@media screen and (max-width: 770px) {
-  .header .wraper .item .header-txt {
-    margin-top: 30px;
-    text-align: center;
-  }
-}
-
 .header .wraper .item .header-txt h1 {
   font-size: 55px;
   margin-bottom: 20px;
@@ -335,12 +322,6 @@ p {
   .header .wraper .item .header-txt h1 {
     font-size: 30px;
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 770px) {
-  .header .wraper .item .header-txt h1 {
-    font-size: 55px;
   }
 }
 
@@ -436,12 +417,6 @@ p {
 @media screen and (max-width: 576px) {
   .about .about-txt, .about-about-section .about-txt {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .about .about-txt, .about-about-section .about-txt {
-    width: 80%;
   }
 }
 
@@ -756,7 +731,7 @@ p {
 @media screen and (max-width: 576px) {
   .testimonial .testimonial-txt .textmoTxt .testDetail p, .portfolio-testimonial-section .testimonial-txt .textmoTxt .testDetail p {
     font-size: 10px;
-    margin-left: 20px;
+    margin-left: -20px;
   }
 }
 
@@ -803,15 +778,6 @@ p {
 @media screen and (max-width: 576px) {
   .testimonial {
     padding: 0px 0px 50px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .testimonial {
-    margin-top: 30px;
-    text-align: center;
-    width: 100%;
-    margin: auto;
   }
 }
 
@@ -985,12 +951,6 @@ p {
 @media screen and (max-width: 576px) {
   .price-plan {
     padding: 0px 0 60px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .price-plan .media-margin {
-    margin-top: 50px;
   }
 }
 
@@ -1322,12 +1282,6 @@ p {
 @media screen and (max-width: 576px) {
   .service-detail .service-header-txt {
     width: 90%;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .service-detail .service-header-txt {
-    width: 80%;
   }
 }
 

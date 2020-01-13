@@ -112,7 +112,7 @@ $primary-color: #2a57e6;
             outline: none;
         }
 
-        .fas {
+        .fa {
             color: #000912;
         }
     }
@@ -286,7 +286,7 @@ $primary-color: #2a57e6;
     }
 
     .navbar-toggler .icon-bar {
-        background: #111
+        width: 100%;
     }
 }
 
@@ -311,9 +311,9 @@ $primary-color: #2a57e6;
         height: 700px;
     }
 
-    @media screen and (max-width: 770px) {
-        height: 105vh;
-    }
+    // @media screen and (max-width: 770px) {
+    //     height: 105vh;
+    // }
 
     .wraper {
         height: 100%;
@@ -327,10 +327,10 @@ $primary-color: #2a57e6;
             .header-txt {
                 @include margin(top, 200px);
 
-                @media screen and (max-width: 770px) {
-                    margin-top: 30px;
-                    text-align: center;
-                }
+                // @media screen and (max-width: 770px) {
+                //     margin-top: 30px;
+                //     text-align: center;
+                // }
 
                 h1 {
                     font-size: 55px;
@@ -341,9 +341,9 @@ $primary-color: #2a57e6;
                         text-align: center;
                     }
 
-                    @media screen and (min-width: 770px) {
-                        font-size: 55px;
-                    }
+                    // @media screen and (min-width: 770px) {
+                    //     font-size: 55px;
+                    // }
                 }
 
                 p {
@@ -444,9 +444,9 @@ $primary-color: #2a57e6;
             width: 100%;
         }
 
-        @media screen and (max-width: 770px) {
-            width: 80%;
-        }
+        // @media screen and (max-width: 770px) {
+        //     width: 80%;
+        // }
 
         h2 {
             font-weight: 600;
@@ -742,7 +742,7 @@ $primary-color: #2a57e6;
                 p {
                     @media screen and (max-width: 576px) {
                         font-size: 10px;
-                        @include margin(left, 20px);
+                        @include margin(left, -20px);
                     }
                 }
             }
@@ -796,13 +796,13 @@ $primary-color: #2a57e6;
         padding: 0px 0px 50px;
     }
 
-    @media screen and (max-width: 770px) {
-        margin-top: 30px;
-        text-align: center;
-        width: 100%;
-        margin: auto;
+    // @media screen and (max-width: 770px) {
+    //     margin-top: 30px;
+    //     text-align: center;
+    //     width: 100%;
+    //     margin: auto;
 
-    }
+    // }
 }
 
 /*-------------------------------*/
@@ -973,11 +973,11 @@ $primary-color: #2a57e6;
     @media screen and (max-width: 576px) {
         padding: 0px 0 60px;
     }
-    .media-margin{
-        @media screen and (max-width: 770px) {
-            margin-top: 50px;
-        } 
-    }
+    // .media-margin{
+    //     @media screen and (max-width: 770px) {
+    //         margin-top: 50px;
+    //     } 
+    // }
 }
 
 
@@ -1330,9 +1330,9 @@ $primary-color: #2a57e6;
             width: 90%;
         }
 
-        @media screen and (max-width: 770px) {
-            width: 80%;
-        }
+        // @media screen and (max-width: 770px) {
+        //     width: 80%;
+        // }
 
         h2 {
             line-height: 1.4;
