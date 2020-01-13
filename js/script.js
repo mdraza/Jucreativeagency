@@ -6,7 +6,14 @@ $(document).ready(function () {
     })
 });
 
-
+/****  Preloader  ****/
+// $("#status").fadeOut();
+$("#preloader")
+  .delay(550)
+  .fadeOut("slow");
+$("body")
+  .delay(550)
+  .css({ overflow: "visible" });
 
 /****  Brands Carousel  ****/
 $('.owl-carouselOne').owlCarousel({

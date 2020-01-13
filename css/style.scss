@@ -85,7 +85,7 @@ $primary-color: #2a57e6;
 
 
 .navbar {
-    padding: 8px 0;
+    padding: 6px 0;
     background: 0 0;
     position: absolute;
     top: 0;
@@ -161,9 +161,9 @@ $primary-color: #2a57e6;
         .nav-item:not(:last-child) .nav-link {
             @include margin(right, 30px);
 
-            @media screen and (max-width: 769px) {
-                @include margin(right, 8px);
-            }
+            // @media screen and (max-width: 769px) {
+            //     @include margin(right, 8px);
+            // }
         }
     }
 
@@ -178,6 +178,83 @@ $primary-color: #2a57e6;
         }
     }
 }
+/*-------------------------------*/
+/*        Preloader
+/*-------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2a57e6;
+    z-index: 9999;
+    /* makes sure it stays on top */
+  }
+  
+  .pre-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+  
+  .spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
 
 /*-------------------------------*/
 /*      Sticky Navbar
@@ -213,22 +290,7 @@ $primary-color: #2a57e6;
     }
 }
 
-@media (max-width: 769px) {
-    .navbar-expand-md .navbar-nav {
-        -ms-flex-direction: row;
-        flex-direction: row;
-        margin-top: -40px;
-    }
 
-    .navbar-expand-md>.container,
-    .navbar-expand-md>.container-fluid,
-    .navbar-expand-md>.container-lg,
-    .navbar-expand-md>.container-md,
-    .navbar-expand-md>.container-sm,
-    .navbar-expand-md>.container-xl {
-        flex-wrap: wrap;
-    }
-}
 
 
 
@@ -237,7 +299,7 @@ $primary-color: #2a57e6;
 /*-------------------------------*/
 .header {
     position: relative;
-    height: 85vh;
+    height: 90vh;
     width: 100%;
     overflow: hidden;
     background-image: url(../images/header-bg.jpg);
