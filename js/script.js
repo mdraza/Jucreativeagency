@@ -14,6 +14,7 @@ $("#preloader")
 $("body")
   .delay(550)
   .css({ overflow: "visible" });
+  
 
 /****  Brands Carousel  ****/
 $('.owl-carouselOne').owlCarousel({
